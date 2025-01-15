@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoZon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <header style="margin:0">
+        <h1 style="margin:0">AlgoZon</h1>
+    </header>
+    <main>
+        <section class="wallet">
+            <h2>Wallet</h2>
+            <p style="font-size:10px">Wallet ID: <span id="wallet-id">Fetching...</span></p>
+            <p>Balance: <span id="wallet-balance">0.00</span></p>
+        </section>
+
+        <section class="transactions">
+            <h2>Transactions</h2>
+            <ul id="transaction-list">
+                <!-- Transactions populated by JavaScript -->
+            </ul>
+        </section>
+
+        <section class="cart">
+            <h2>Items</h2>
+            <div id="item-list">
+                <!-- Items dynamically populated -->
+            </div>
+
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">0.00</span></p>
+                <button id="clear-cart">Clear Cart</button>
+                <button id="purchase">Purchase</button>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
