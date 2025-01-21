@@ -12,9 +12,16 @@ ALGOD_ADDRESS = "http://localhost:4001"
 ALGOD_TOKEN = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
 algod_client = algod.AlgodClient(ALGOD_TOKEN, ALGOD_ADDRESS)
-RECEIVER_ADDRESS = "PB4BVSBFL5XTJSAM2XHGJOUGDPMJHAQ5BSKBNLEPFCN7IU4PHRNUZ2X3AA"
-SENDER_ADDRESS = "K6TDRJ36RZRI5KOJ2OBS63MN4BI7D55WH3WCT5WLUWZZA5M7SUOMCKIBAI"
-SENDER_MNEMONIC = "eternal wrong caught note notable gaze twice dizzy judge iron love neutral glad strike crime open runway profit dentist already exclude misery test able estate"
+## matan
+# RECEIVER_ADDRESS = "PB4BVSBFL5XTJSAM2XHGJOUGDPMJHAQ5BSKBNLEPFCN7IU4PHRNUZ2X3AA"
+# -SENDER_ADDRESS = "K6TDRJ36RZRI5KOJ2OBS63MN4BI7D55WH3WCT5WLUWZZA5M7SUOMCKIBAI"
+# -SENDER_MNEMONIC = "eternal wrong caught note notable gaze twice dizzy judge iron love neutral glad strike crime open runway profit dentist already exclude misery test able estate"
+## !matan
+## shlomo
+RECEIVER_ADDRESS = "YQ5NKZMOYRPHVR7R65GTOKNCFIRNDEJDCORMOBK6QRBX5SJCKU4FH35ZH4"
+SENDER_ADDRESS = "C5LCXEWPVR6UFBZTKHZQVTRZFBADRHJATKYJSLVYMWL6IM6HAUCKVUNVKY"
+SENDER_MNEMONIC = "achieve cram supply six blast swap clown about bronze rude situate ten never insect bubble lyrics window sugar salon junior picture eternal fiber absent brown"
+## !shlomo
 
 def get_wallet_balance(wallet_address):
 	"""
