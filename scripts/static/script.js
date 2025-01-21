@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 walletIdEl.textContent = data.id;
-                walletBalanceEl.textContent = data.balance.toFixed(2);
+                walletBalanceEl.textContent = data.balance;
             });
     };
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const itemDiv = document.createElement('div');
                     itemDiv.classList.add('item');
                     itemDiv.innerHTML = `
-                        <p>${item.name} - ${item.price.toFixed(2)}</p>
+                        <p>${item.name} - ${item.price}</p>
                         <button data-index="${index}" data-action="-1">-</button>
                         <input type="text" id="item-${index}" value="0" readonly />
                         <button data-index="${index}" data-action="1">+</button>
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 for (let index in cart) {
                     total += cart[index] * items[index].price;
                 }
-                cartTotalEl.textContent = total.toFixed(2);
+                cartTotalEl.textContent = total;
             });
     };
 
